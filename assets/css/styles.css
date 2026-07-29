@@ -367,11 +367,16 @@ h3 { font-size: clamp(1.35rem, 3vw, 2rem); }
 .ba-after {
   position: absolute;
   inset: 0;
+  left: auto;
   width: 50%;
   overflow: hidden;
-  border-right: 3px solid var(--gold);
+  border-left: 3px solid var(--gold);
 }
-.ba-after img { width: 200%; max-width: none; }
+.ba-after img {
+  width: 200%;
+  max-width: none;
+  transform: translateX(-50%);
+}
 .ba-slider input {
   position: absolute;
   inset: 0;

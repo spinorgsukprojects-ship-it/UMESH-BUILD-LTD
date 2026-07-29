@@ -36,7 +36,7 @@ document.querySelectorAll(".ba-slider").forEach((slider) => {
   const after = slider.querySelector(".ba-after");
   if (!input || !after) return;
   input.addEventListener("input", () => {
-    after.style.width = `${input.value}%`;
+    after.style.width = `${100 - input.value}%`;
   });
 });
 

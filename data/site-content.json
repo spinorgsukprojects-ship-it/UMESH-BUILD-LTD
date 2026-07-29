@@ -1,0 +1,44 @@
+{
+  "company": {
+    "name": "UMESH BUILD LTD",
+    "tagline": "Built with Strength. Finished with Care.",
+    "phone": "07502 223489",
+    "phoneHref": "tel:+447502223489",
+    "whatsapp": "https://wa.me/447502223489?text=Hello%20UMESH%20BUILD%20LTD%2C%20I%20would%20like%20to%20discuss%20a%20construction%20project.",
+    "email": "umeshchandrayathagiri921@gmail.com",
+    "emailHref": "mailto:umeshchandrayathagiri921@gmail.com",
+    "address": "37 Thornleigh Road, Manchester, M14 7RB, United Kingdom",
+    "maps": "https://www.google.com/maps/search/?api=1&query=37%20Thornleigh%20Road%2C%20Manchester%2C%20M14%207RB%2C%20United%20Kingdom",
+    "businessHours": "Business hours to be confirmed"
+  },
+  "locations": [
+    "Manchester",
+    "Greater Manchester",
+    "South Manchester",
+    "Stockport",
+    "Salford",
+    "Trafford",
+    "Didsbury",
+    "Chorlton",
+    "Withington",
+    "Fallowfield",
+    "Rusholme",
+    "Levenshulme",
+    "Longsight",
+    "Nearby North West locations by arrangement"
+  ],
+  "adminPlaceholders": {
+    "companyRegistrationNumber": "Add verified company registration number before publishing.",
+    "insuranceDetails": "Add verified insurance information only after approval.",
+    "accreditations": "Add only verified memberships or certifications.",
+    "warrantyInformation": "Add approved warranty wording only.",
+    "tradingHistory": "Add confirmed trading history only.",
+    "customerReviews": "Only display genuine reviews provided or approved by UMESH BUILD LTD.",
+    "socialLinks": "Add verified official social media profiles."
+  },
+  "developerNotes": [
+    "Replace all demonstration project titles, locations and images with verified UMESH BUILD LTD projects before launch.",
+    "Only display genuine reviews provided or approved by UMESH BUILD LTD. Do not generate fake client names, star ratings or testimonials.",
+    "Connect quote forms to a secure server-side handler or serverless function. Never expose SMTP credentials or API keys in frontend code."
+  ]
+}

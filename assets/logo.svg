@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 92" role="img" aria-labelledby="title desc">
+  <title id="title">UMESH BUILD LTD logo</title>
+  <desc id="desc">A premium structural U mark with roofline and UMESH BUILD LTD wordmark.</desc>
+  <rect width="92" height="92" rx="10" fill="#151719"/>
+  <path d="M19 28h13v31c0 9 6 15 15 15s15-6 15-15V28h13v31c0 17-11 28-28 28S19 76 19 59V28Z" fill="#F4F1EA"/>
+  <path d="M22 25 47 10l25 15v10L47 20 22 35V25Z" fill="#D5A021"/>
+  <path d="M84 24h8v44h-8z" fill="#D5A021"/>
+  <path d="M108 25h34v7h-25v12h22v7h-22v17h-9V25Zm43 0h9v43h-9V25Zm21 0h11l15 26 15-26h11v43h-9V39l-14 24h-6l-14-24v29h-9V25Zm65 0h33v7h-24v10h22v7h-22v12h25v7h-34V25Zm44 0h10v36h24v7h-34V25Zm42 0h17c14 0 24 9 24 22s-10 21-24 21h-17V25Zm17 36c9 0 15-6 15-14s-6-15-15-15h-8v29h8Z" fill="#151719"/>
+  <path d="M109 82h205" stroke="#D5A021" stroke-width="3"/>
+</svg>

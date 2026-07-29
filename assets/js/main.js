@@ -31,15 +31,6 @@ if (menuButton && mobileMenu) {
   });
 }
 
-document.querySelectorAll(".ba-slider").forEach((slider) => {
-  const input = slider.querySelector("input");
-  const after = slider.querySelector(".ba-after");
-  if (!input || !after) return;
-  input.addEventListener("input", () => {
-    after.style.width = `${100 - input.value}%`;
-  });
-});
-
 const revealObserver = "IntersectionObserver" in window
   ? new IntersectionObserver((entries) => {
       entries.forEach((entry) => {

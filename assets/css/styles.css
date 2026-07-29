@@ -142,7 +142,7 @@ button, input, select, textarea { font: inherit; }
 .btn-line { border: 1px solid var(--line); background: transparent; color: var(--charcoal); }
 
 .hero {
-  min-height: 92vh;
+  min-height: 88vh;
   position: relative;
   display: grid;
   align-items: end;
@@ -172,9 +172,9 @@ button, input, select, textarea { font: inherit; }
   z-index: -1;
 }
 .hero-inner {
-  padding: 190px 0 80px;
+  padding: 168px 0 78px;
   display: grid;
-  grid-template-columns: minmax(0, 1.18fr) 380px;
+  grid-template-columns: minmax(0, 1.12fr) 360px;
   gap: 44px;
   align-items: end;
 }
@@ -193,8 +193,8 @@ h1, h2, h3, .display {
   letter-spacing: 0;
   overflow-wrap: anywhere;
 }
-h1 { font-size: clamp(3rem, 8vw, 6.9rem); max-width: 900px; }
-h2 { font-size: clamp(2.1rem, 5vw, 4.4rem); }
+h1 { font-size: clamp(3rem, 6.9vw, 5.85rem); max-width: 860px; }
+h2 { font-size: clamp(2.1rem, 4.4vw, 4rem); }
 h3 { font-size: clamp(1.35rem, 3vw, 2rem); }
 .lead { font-size: clamp(1.03rem, 2vw, 1.25rem); max-width: 760px; color: rgba(255,255,255,.86); }
 .section-lead { color: #555b61; max-width: 690px; font-size: 1.08rem; }
@@ -589,6 +589,66 @@ h3 { font-size: clamp(1.35rem, 3vw, 2rem); }
 .reveal { opacity: 0; transform: translateY(22px); transition: opacity 600ms ease, transform 600ms ease; }
 .reveal.visible { opacity: 1; transform: translateY(0); }
 
+@media (max-width: 1280px) and (min-width: 981px) {
+  :root { --max: 1080px; }
+  .nav {
+    height: 74px;
+    gap: 18px;
+  }
+  .brand-mark {
+    width: 48px;
+    height: 48px;
+  }
+  .brand-mark svg {
+    width: 35px;
+    height: 35px;
+  }
+  .brand-text span { display: none; }
+  .nav-links {
+    gap: 18px;
+    font-size: 0.88rem;
+  }
+  .nav-actions .btn {
+    min-height: 44px;
+    padding-inline: 15px;
+  }
+  .hero {
+    min-height: 82vh;
+  }
+  .hero-inner {
+    grid-template-columns: minmax(0, 1fr) 330px;
+    gap: 30px;
+    padding-top: 134px;
+    padding-bottom: 58px;
+  }
+  h1 {
+    font-size: clamp(3.8rem, 6.1vw, 5.15rem);
+    max-width: 760px;
+  }
+  .lead {
+    max-width: 680px;
+  }
+  .contact-card {
+    padding: 22px;
+  }
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .service-card,
+  .project-card {
+    min-height: 330px;
+  }
+  .timeline {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .feature-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-grid {
+    grid-template-columns: 1.2fr repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 980px) {
   .announcement .container { justify-content: center; text-align: center; }
   .announcement-actions { display: none; }
@@ -670,7 +730,7 @@ h3 { font-size: clamp(1.35rem, 3vw, 2rem); }
 }
 
 @media (max-width: 640px) {
-  body { padding-bottom: 64px; }
+  body { padding-bottom: 82px; }
   .container { width: min(100% - 28px, var(--max)); }
   .nav { height: 64px; }
   .brand-mark {
@@ -700,8 +760,8 @@ h3 { font-size: clamp(1.35rem, 3vw, 2rem); }
     font-size: 1.12rem;
   }
   .hero-inner {
-    padding-top: 104px;
-    padding-bottom: 32px;
+    padding-top: 96px;
+    padding-bottom: 34px;
   }
   .eyebrow {
     font-size: 0.72rem;
@@ -711,9 +771,9 @@ h3 { font-size: clamp(1.35rem, 3vw, 2rem); }
     white-space: normal;
   }
   .hero .eyebrow { max-width: 31ch; }
-  h1 { font-size: clamp(2.18rem, 10.5vw, 2.65rem); line-height: 1; }
+  h1 { font-size: clamp(2.28rem, 10.2vw, 2.85rem); line-height: 1.01; }
   .hero h1 {
-    max-width: 9.5ch;
+    max-width: 11.5ch;
     overflow-wrap: normal;
     word-break: normal;
   }
@@ -725,9 +785,9 @@ h3 { font-size: clamp(1.35rem, 3vw, 2rem); }
     line-height: 1.55;
   }
   .hero .lead {
-    margin-top: 16px;
+    margin-top: 14px;
     color: rgba(255,255,255,.82);
-    max-width: 34ch;
+    max-width: 33ch;
   }
   .hero-actions, .cookie-actions { flex-direction: column; }
   .hero-actions {
@@ -742,10 +802,14 @@ h3 { font-size: clamp(1.35rem, 3vw, 2rem); }
   .contact-card {
     max-width: none;
     width: 100%;
-    padding: 18px;
+    padding: 16px;
     box-shadow: 0 18px 42px rgba(0, 0, 0, 0.24);
   }
-  .contact-card h2[style] { font-size: 1.45rem !important; }
+  .contact-card h2[style] { font-size: 1.32rem !important; }
+  .contact-card p {
+    margin: 6px 0 14px;
+    line-height: 1.45;
+  }
   .scroll-indicator { display: none; }
   .section-header { display: block; }
   .section { padding: 54px 0; }
@@ -765,9 +829,9 @@ h3 { font-size: clamp(1.35rem, 3vw, 2rem); }
   .image-collage img, .image-collage img:first-child { height: 240px; grid-row: auto; }
   .service-card,
   .project-card {
-    min-height: 292px;
+    min-height: 272px;
   }
-  .project-grid .project-card:nth-child(3n+1) { min-height: 330px; }
+  .project-grid .project-card:nth-child(3n+1) { min-height: 304px; }
   .card-content { padding: 19px; }
   .card-content p {
     margin-bottom: 12px;
@@ -821,11 +885,11 @@ h3 { font-size: clamp(1.35rem, 3vw, 2rem); }
   }
   .consent input { margin-top: 5px; }
   .cookie {
-    left: 10px;
+    left: 12px;
     right: auto;
-    bottom: 72px;
-    width: min(360px, calc(100vw - 20px)) !important;
-    max-width: min(360px, calc(100vw - 20px));
+    bottom: 84px;
+    width: min(340px, calc(100vw - 24px)) !important;
+    max-width: min(340px, calc(100vw - 24px));
     padding: 14px;
     max-height: 34vh;
     overflow: auto;
@@ -854,16 +918,21 @@ h3 { font-size: clamp(1.35rem, 3vw, 2rem); }
   .mobile-contact-bar {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    left: 0;
+    left: 12px;
     right: auto;
-    width: min(390px, 100vw) !important;
-    max-width: min(390px, 100vw);
+    bottom: 10px;
+    width: min(366px, calc(100vw - 24px)) !important;
+    max-width: min(366px, calc(100vw - 24px));
+    border: 1px solid rgba(255,255,255,.14);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 14px 34px rgba(0,0,0,.32);
   }
   .mobile-contact-bar a:nth-child(3) { display: none; }
   .mobile-contact-bar a {
-    min-height: 62px;
+    min-height: 54px;
     min-width: 0;
-    font-size: 0.8rem;
+    font-size: 0.84rem;
     padding: 0 2px;
     text-align: center;
     white-space: nowrap;
@@ -875,9 +944,9 @@ h3 { font-size: clamp(1.35rem, 3vw, 2rem); }
 @media (max-width: 380px) {
   .container { width: min(100% - 22px, var(--max)); }
   .brand-text { max-width: 172px; font-size: 0.78rem; }
-  h1 { font-size: clamp(2rem, 10vw, 2.38rem); }
-  .hero h1 { max-width: 9.2ch; }
-  .hero-inner { padding-top: 96px; }
+  h1 { font-size: clamp(2.08rem, 10vw, 2.45rem); }
+  .hero h1 { max-width: 11ch; }
+  .hero-inner { padding-top: 92px; }
   .contact-card { padding: 16px; }
 }
 
